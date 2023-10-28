@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <style>
+     body{
+        font-size:40px;
+        text-align: center;
+        color: dodgerblue;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+    }
+    span{
+        color: crimson;
+    }
+   </style>
+</head>
+<body>
+    
+
+    <script>
+        var marks =parseFloat(prompt("Enter Your Marks: "));
+        if(marks>=80 && marks<=100)
+        document.write("Congratulations! You secured A+");
+        else if(marks>=70 && marks<=79)
+        document.write("Congratulations! You secured A");
+        else if(marks>=60 && marks<=69)
+        document.write("Congratulations! You secured A-");
+        else if(marks>=50 && marks<=59)
+        document.write("You secured B");
+        else if(marks>=40 && marks<=49)
+        document.write("You secured C");
+        else if(marks>=33 && marks<=39)
+        document.write("You secured D");
+        else if(marks>=0 && marks<=32)
+        document.write("<span>You have failed</span>");
+        else
+            document.write("<span>Invalid Input</span>");
+     
+    
+
+    </script>
+</body>
+</html>
